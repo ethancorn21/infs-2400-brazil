@@ -42,14 +42,15 @@ Week of April 13th
     Are there better ways to implement our chosen elements? 
 
     Research technologies and frameworks that can help us better emphasize our point and implement chosen elements 
-
-Week of April 20th 
-
+ 
     Ensure each member knows Git / GitHub 
 
     Begin coding project  
 
-    Divy up work to allow for maximal creative freedom and enthusiasm amongst each member. 
+ 
+Week of April 20th 
+
+    By end of week, be finished coding
 
 Week of April 27th 
 
