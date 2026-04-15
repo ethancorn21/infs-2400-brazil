@@ -1,10 +1,181 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>test</title>
-<link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil Social Issues - Splash Page</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>test</h1>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">BRAZIL SOCIAL ISSUES</a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-link">UN Sustainability Goals Project</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="mission-statement">
+                <h3 class="text-dark-green">Our Mission Statement</h3>
+                <p>Highlighting Brazilian social issues within the context of UN sustainability goals to drive awareness and change.</p>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="row">
+            <!-- Content Carousel -->
+            <div class="col-lg-6">
+                <div class="content-box">
+                    <h4>Main Topics</h4>
+                    <p>Explore our research on Brazil's social challenges:</p>
+                    <div id="topicCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="page1.html">
+                                    <div class="p-5 text-center bg-warning text-dark-green rounded-20" style="background-color: var(--yellow) !important;">
+                                        <h5>Issue #1: Social Inequality</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="page2.html">
+                                    <div class="p-5 text-center bg-warning text-dark-green rounded-20" style="background-color: var(--yellow) !important;">
+                                        <h5>Issue #2: Education Access</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- More items as needed -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#topicCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#topicCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Carousel -->
+            <div class="col-lg-3">
+                <div class="team-carousel-box text-center">
+                    <h4>Team Pictures</h4>
+                    <div id="teamCarousel" class="carousel slide" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/200x300?text=Ethan+Corn" class="d-block w-100" alt="Ethan Corn">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/200x300?text=Member+2" class="d-block w-100" alt="Member 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/200x300?text=Member+3" class="d-block w-100" alt="Member 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/200x300?text=Member+4" class="d-block w-100" alt="Member 4">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member Info Carousel -->
+            <div class="col-lg-3">
+                <div class="team-info-box">
+                    <h4>The Team</h4>
+                    <hr>
+                    <div id="teamInfoCarousel" class="carousel slide" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <!-- Member 1 -->
+                            <div class="carousel-item active">
+                                <div class="team-member">
+                                    <h5 class="text-yellow">Ethan Corn</h5>
+                                    <p class="mb-1"><strong>Grade:</strong> Sophomore</p>
+                                    <p><strong>Major:</strong> Web Development</p>
+                                    <p class="small mt-3">Short bio or role in the project goes here.</p>
+                                </div>
+                            </div>
+                            <!-- Member 2 -->
+                            <div class="carousel-item">
+                                <div class="team-member">
+                                    <h5 class="text-yellow">Member Two</h5>
+                                    <p class="mb-1"><strong>Grade:</strong> Junior</p>
+                                    <p><strong>Major:</strong> Sociology</p>
+                                    <p class="small mt-3">Description of contribution.</p>
+                                </div>
+                            </div>
+                            <!-- Member 3 -->
+                            <div class="carousel-item">
+                                <div class="team-member">
+                                    <h5 class="text-yellow">Member Three</h5>
+                                    <p class="mb-1"><strong>Grade:</strong> Senior</p>
+                                    <p><strong>Major:</strong> Political Science</p>
+                                    <p class="small mt-3">Description of contribution.</p>
+                                </div>
+                            </div>
+                            <!-- Member 4 -->
+                            <div class="carousel-item">
+                                <div class="team-member">
+                                    <h5 class="text-yellow">Member Four</h5>
+                                    <p class="mb-1"><strong>Grade:</strong> Freshman</p>
+                                    <p><strong>Major:</strong> Environmental Studies</p>
+                                    <p class="small mt-3">Description of contribution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container clearfix">
+            <p class="float-start">© 2026 Brazil Social Issues Project</p>
+            <div class="footer-nav-box">
+                <ul class="d-flex align-items-center mb-0">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="page1.html">PAGE 1</a></li>
+                    <li><a href="page2.html">PAGE 2</a></li>
+                    <li><a href="page3.html">PAGE 3</a></li>
+                    <li><a href="page4.html">PAGE 4</a></li>
+                    <li><a href="page5.html">PAGE 5</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sync Carousels Script -->
+    <script>
+        const teamCarousel = document.getElementById('teamCarousel');
+        const teamInfoCarousel = document.getElementById('teamInfoCarousel');
+        
+        const infoCarouselInstance = new bootstrap.Carousel(teamInfoCarousel);
+
+        teamCarousel.addEventListener('slide.bs.carousel', function (event) {
+            infoCarouselInstance.to(event.to);
+        });
+    </script>
 </body>
+</html>

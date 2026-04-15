@@ -1,0 +1,136 @@
+/* Brazil Social Issues - Theme Colors */
+:root {
+    --dark-green: #0E2603;
+    --yellow: #DFC914;
+    --off-white: #F2EDE4;
+    --rust: #A65E44;
+    --peach: #F29979;
+}
+
+body {
+    background-color: var(--off-white);
+    color: var(--dark-green);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0;
+}
+
+/* Nav Bar */
+.navbar {
+    background-color: var(--dark-green) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--off-white) !important;
+}
+
+.nav-link:hover {
+    color: var(--yellow) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 400px;
+    background-color: var(--yellow); /* Changed from peach to yellow */
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid var(--dark-green);
+}
+
+.mission-statement {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: var(--off-white); 
+    padding: 25px;
+    width: 350px;
+    border: 3px solid var(--yellow);
+    box-shadow: 8px 8px 0px var(--dark-green);
+    color: var(--dark-green);
+}
+
+/* Content Blocks */
+.content-box {
+    background-color: var(--off-white); /* Primary Tan background */
+    color: var(--dark-green);
+    padding: 20px;
+    min-height: 400px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 3px solid var(--yellow); /* Yellow accent border */
+}
+
+.team-carousel-box {
+    background-color: var(--off-white);
+    color: var(--dark-green);
+    padding: 20px;
+    min-height: 400px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--dark-green);
+}
+
+.team-info-box {
+    background-color: var(--off-white);
+    color: var(--dark-green);
+    padding: 20px;
+    min-height: 400px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 3px solid var(--rust); /* Minor brownish accent */
+}
+
+/* Carousel Adjustments */
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-green);
+    color: var(--off-white);
+    padding: 50px 0;
+    margin-top: 40px;
+    position: relative;
+}
+
+.footer-nav-box {
+    background-color: var(--peach);
+    padding: 20px;
+    color: var(--dark-green);
+    border: 3px solid var(--off-white);
+    width: fit-content;
+    float: right;
+}
+
+.footer-nav-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav-box li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-nav-box a {
+    color: var(--dark-green);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav-box a:hover {
+    color: var(--rust);
+}
+
+/* General Layout helpers */
+.text-yellow { color: var(--yellow); }
+.bg-peach { background-color: var(--peach); }
+.rounded-20 { border-radius: 20px; }
