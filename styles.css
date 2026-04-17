@@ -28,3 +28,7 @@ img {
 ul {
   padding-left: 20px;
 }
+section:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
