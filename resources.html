@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Brazil Social Issues</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .resource-section-title {
+            color: var(--dark-green);
+            border-bottom: 3px solid var(--yellow);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            margin-top: 35px;
+        }
+        .resource-section-title:first-of-type {
+            margin-top: 0;
+        }
+        .resource-card {
+            background-color: var(--dark-green);
+            color: var(--off-white);
+            border-radius: 10px;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .resource-card h5 {
+            color: var(--yellow);
+            margin-bottom: 8px;
+        }
+        .resource-card p {
+            font-size: 0.9rem;
+            color: var(--off-white);
+            opacity: 0.85;
+            flex-grow: 1;
+        }
+        .resource-card .btn-resource {
+            background-color: var(--rust);
+            color: var(--off-white);
+            border: none;
+            border-radius: 6px;
+            padding: 6px 16px;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 12px;
+            transition: background-color 0.2s;
+        }
+        .resource-card .btn-resource:hover {
+            background-color: var(--peach);
+            color: var(--dark-green);
+        }
+        .sidebar-nav .active-link {
+            color: var(--peach) !important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BRAZIL SOCIAL ISSUES</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="header-banner">
+        <div class="container">
+            <h1 class="display-4">Resources</h1>
+            <p class="lead">Charities & Organizations Working on Brazil's Social Challenges</p>
+        </div>
+    </header>
+
+    <div class="container mb-5">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="sidebar-nav">
+                    <h5 class="text-white">Topics</h5>
+                    <a href="page1.html">1. Social Inequality</a>
+                    <a href="page2.html">2. Education Access</a>
+                    <a href="page3.html">3. Health Infrastructure</a>
+                    <a href="page4.html">4. Urban Poverty</a>
+                    <a href="page5.html">5. Environmental Impact</a>
+                    <hr>
+                    <a href="resources.html" class="active-link">Resources</a>
+                    <a href="index.html" style="color: var(--peach);">← Back to Home</a>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="content-main">
+
+                    <p class="text-muted mb-4">Below are organizations and charities working to address the social issues covered in this project. Each section corresponds to one of the five topic pages.</p>
+
+                    <!-- Section 1: Social Inequality -->
+                    <h3 class="resource-section-title">1. Social Inequality</h3>
+                    <div class="row g-3 mb-2">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to social inequality in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to social inequality in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to social inequality in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Education Access -->
+                    <h3 class="resource-section-title">2. Education Access</h3>
+                    <div class="row g-3 mb-2">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to education access in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to education access in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to education access in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Health Infrastructure -->
+                    <h3 class="resource-section-title">3. Health Infrastructure</h3>
+                    <div class="row g-3 mb-2">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to health infrastructure in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to health infrastructure in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to health infrastructure in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 4: Urban Poverty -->
+                    <h3 class="resource-section-title">4. Urban Poverty</h3>
+                    <div class="row g-3 mb-2">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to urban poverty in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to urban poverty in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to urban poverty in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 5: Environmental Impact -->
+                    <h3 class="resource-section-title">5. Environmental Impact</h3>
+                    <div class="row g-3 mb-2">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to environmental impact in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to environmental impact in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>[Organization Name]</h5>
+                                    <p>[Brief description of what this org does and how it relates to environmental impact in Brazil.]</p>
+                                </div>
+                                <a href="#" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container clearfix">
+            <p class="float-start">&copy; 2026 Brazil Social Issues Project</p>
+            <div class="footer-nav-box">
+                <ul class="d-flex align-items-center mb-0">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="page1.html">PAGE 1</a></li>
+                    <li><a href="page2.html">PAGE 2</a></li>
+                    <li><a href="page3.html">PAGE 3</a></li>
+                    <li><a href="page4.html">PAGE 4</a></li>
+                    <li><a href="page5.html">PAGE 5</a></li>
+                    <li><a href="resources.html">RESOURCES</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

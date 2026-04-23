@@ -11,101 +11,194 @@ body {
     background-color: var(--off-white);
     color: var(--dark-green);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 0;
 }
 
-/* Nav Bar */
+/* ---- Nav Bar ---- */
 .navbar {
-    background-color: var(--dark-green) !important;
+    background-color: var(--dark-green);
+    padding: 15px 0;
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand {
+    color: var(--off-white) !important;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
     color: var(--off-white) !important;
 }
 
-.nav-link:hover {
+.navbar-nav .nav-link:hover {
     color: var(--yellow) !important;
 }
 
-/* Hero Section */
+/* ---- Hero Section ---- */
 .hero-section {
-    position: relative;
-    border-radius: 25px;
-    overflow: hidden;
-    margin-top: 20px;
-    height: 400px;
-    background-color: var(--yellow); /* Changed from peach to yellow */
-    background-image: url('../images/hero-bg.jpg');
+    background-color: var(--dark-green);
+    background-image: url('../images/image.png');
     background-size: cover;
     background-position: center;
-    border: 3px solid var(--dark-green);
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 40px;
+    min-height: 350px;
+    position: relative;
+    overflow: hidden;
 }
 
-.mission-statement {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    background-color: var(--off-white); 
-    padding: 25px;
-    width: 350px;
-    border: 3px solid var(--yellow);
-    box-shadow: 8px 8px 0px var(--dark-green);
+.hero-section .hero-image-placeholder {
+    color: var(--off-white);
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+
+.hero-section .mission-box {
+    background-color: var(--peach);
     color: var(--dark-green);
+    padding: 25px 30px;
+    border-radius: 8px;
 }
 
-/* Content Blocks */
+.hero-section .mission-box h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-section .mission-box p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* ---- UN Goal Box ---- */
+.un-goal-box {
+    background-color: var(--dark-green);
+    color: var(--off-white);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid var(--yellow);
+}
+
+.un-goal-box h4 {
+    color: var(--yellow);
+    margin-bottom: 10px;
+}
+
+/* ---- Content Row ---- */
+.content-row {
+    margin-top: 25px;
+}
+
 .content-box {
-    background-color: var(--off-white); /* Primary Tan background */
-    color: var(--dark-green);
-    padding: 20px;
-    min-height: 400px;
-    margin-top: 20px;
-    border-radius: 15px;
-    border: 3px solid var(--yellow); /* Yellow accent border */
+    background-color: var(--dark-green);
+    color: var(--off-white);
+    padding: 25px;
+    border-radius: 12px;
+    min-height: 320px;
 }
 
-.team-carousel-box {
-    background-color: var(--off-white);
-    color: var(--dark-green);
-    padding: 20px;
-    min-height: 400px;
-    margin-top: 20px;
-    border-radius: 15px;
-    border: 1px solid var(--dark-green);
+.content-box h4 {
+    color: var(--yellow);
+    margin-bottom: 15px;
 }
 
-.team-info-box {
-    background-color: var(--off-white);
-    color: var(--dark-green);
-    padding: 20px;
-    min-height: 400px;
-    margin-top: 20px;
-    border-radius: 15px;
-    border: 3px solid var(--rust); /* Minor brownish accent */
+.content-box .carousel-item a {
+    text-decoration: none;
 }
 
-/* Carousel Adjustments */
-.carousel-item img {
-    height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
+.content-box .carousel-slide {
+    background-color: var(--rust);
+    color: var(--off-white);
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-/* Footer */
+.content-box .carousel-slide h5 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Topic carousel arrows - below content, visible */
+.content-box .carousel-control-prev,
+.content-box .carousel-control-next {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: var(--peach);
+    border-radius: 50%;
+    opacity: 1;
+    margin: 0 5px;
+}
+
+.content-box .carousel-control-prev:hover,
+.content-box .carousel-control-next:hover {
+    background-color: var(--rust);
+}
+
+.content-box .carousel-control-prev-icon,
+.content-box .carousel-control-next-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Team Box (combined photo + info) */
+.team-box {
+    background-color: var(--dark-green);
+    color: var(--off-white);
+    padding: 25px;
+    border-radius: 12px;
+    min-height: 320px;
+}
+
+.team-box h4 {
+    color: var(--yellow);
+    margin-bottom: 15px;
+}
+
+.team-box .carousel-item img {
+    border-radius: 8px;
+}
+
+.team-box .carousel-control-prev,
+.team-box .carousel-control-next {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: var(--peach);
+    border-radius: 50%;
+    opacity: 1;
+    margin: 0 5px;
+}
+
+.team-box .carousel-control-prev:hover,
+.team-box .carousel-control-next:hover {
+    background-color: var(--rust);
+}
+
+.team-box .carousel-control-prev-icon,
+.team-box .carousel-control-next-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* ---- Footer ---- */
 footer {
     background-color: var(--dark-green);
     color: var(--off-white);
-    padding: 50px 0;
+    padding: 40px 0;
     margin-top: 40px;
-    position: relative;
 }
 
 .footer-nav-box {
     background-color: var(--peach);
-    padding: 20px;
+    padding: 15px 25px;
     color: var(--dark-green);
-    border: 3px solid var(--off-white);
-    width: fit-content;
+    border-radius: 6px;
     float: right;
 }
 
@@ -113,24 +206,71 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.footer-nav-box li {
-    display: inline-block;
-    margin-left: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .footer-nav-box a {
     color: var(--dark-green);
     text-decoration: none;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .footer-nav-box a:hover {
-    color: var(--rust);
+    color: var(--off-white);
 }
 
-/* General Layout helpers */
+/* ---- Utility ---- */
+.text-dark-green { color: var(--dark-green); }
 .text-yellow { color: var(--yellow); }
-.bg-peach { background-color: var(--peach); }
-.rounded-20 { border-radius: 20px; }
+.text-peach { color: var(--peach); }
+
+/* ---- Content Page Styles ---- */
+.header-banner {
+    background-color: var(--dark-green);
+    color: var(--off-white);
+    padding: 50px 0;
+    margin-bottom: 30px;
+    border-bottom: 4px solid var(--peach);
+}
+
+.header-banner h1 {
+    color: var(--off-white);
+}
+
+.header-banner .lead {
+    color: var(--peach);
+}
+
+.content-main {
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    min-height: 500px;
+}
+
+.sidebar-nav {
+    background-color: var(--dark-green);
+    color: var(--off-white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar-nav a {
+    color: var(--yellow);
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-nav a:hover {
+    color: var(--peach);
+}
+
+.stat-box {
+    background-color: var(--off-white);
+    border-left: 4px solid var(--yellow);
+    padding: 20px;
+}
