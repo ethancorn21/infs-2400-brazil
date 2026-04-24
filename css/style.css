@@ -239,6 +239,10 @@ footer {
     color: var(--peach);
 }
 
+.sidebar-nav .active-link {
+            color: var(--peach) !important;
+            font-weight: bold;
+        }
 .content-main {
     background: white;
     padding: 35px;
