@@ -9,12 +9,22 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/style.css">
     <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        footer {
+            margin-top: auto;
+        }
         .resource-section-title {
             color: var(--dark-green);
             border-bottom: 3px solid var(--yellow);
             padding-bottom: 8px;
             margin-bottom: 20px;
-            margin-top: 35px;
+            margin-top: 30px;
         }
         .resource-section-title:first-of-type {
             margin-top: 0;
@@ -66,7 +76,7 @@
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">BRAZIL SOCIAL ISSUES</a>
+            <a class="navbar-brand" href="index.html">Education In Brazil</a>
         </div>
     </nav>
 
@@ -74,7 +84,10 @@
     <header class="header-banner">
         <div class="container">
             <h1 class="display-4">Resources</h1>
-            <p class="lead">Charities & Organizations Working on Brazil's Social Challenges</p>
+            <p class="lead">
+                Below are organizations and charities working to support
+                education in Brazil.
+            </p>
         </div>
     </header>
 
@@ -89,8 +102,6 @@
                     <a href="page2.html">2. Property</a>
                     <a href="page3.html">3. Finance & Technology</a>
                     <a href="page4.html">4. Microfinance</a>
-                    <hr>
-                    <a href="resources.html" class="active-link">Resources</a>
                     <a href="index.html" style="color: var(--peach);">← Back to Home</a>
                 </div>
             </div>
@@ -98,13 +109,11 @@
             <!-- Main Content -->
             <div class="col-md-9">
                 <div class="content-main">
-
-                    <p class="text-muted mb-4">Below are organizations and charities working to address the social issues covered in this project. Each section corresponds to one of the five topic pages.</p>
-
+                   
                     <!-- Section 1: equal right to resources-->
                     <h3 class="resource-section-title">1. Resources</h3>
-                    <div class="row g-3 mb-2">
-                        <div class="col-sm-6 col-lg-4">
+                    <div class="row g-3 mb-5">
+                        <div class="col-sm-6 col-lg-6">
                             <div class="resource-card">
                                 <div>
                                     <h5>UNICEF Brazil</h5>
@@ -113,154 +122,102 @@
                                 <a href="https://www.unicefusa.org/what-unicef-does/where-unicef-works/south-america/brazil" class="btn-resource">Visit Site</a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-6">
                             <div class="resource-card">
                                 <div>
-                                    <h5></h5>
-                                    <p>[Brief description of what this org does and how it relates to social inequality in Brazil.]</p>
+                                    <h5>Instituto C.</h5>
+                                    <p>Provides multiple types of support for Brazillians in need including tutoring, financial education, and referrals.</p>
                                 </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="resource-card">
-                                <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to social inequality in Brazil.]</p>
-                                </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
+                                <a href="https://institutoc.org.br/en/home-eng/" class="btn-resource">Visit Site</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Section 2: Education Access -->
-                    <h3 class="resource-section-title">2. Education Access</h3>
+                    <!-- Section 2: property & natural resources -->
+                    <h3 class="resource-section-title">2. Property & Natural Resources</h3>
                     <div class="row g-3 mb-2">
                         <div class="col-sm-6 col-lg-4">
                             <div class="resource-card">
                                 <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to education access in Brazil.]</p>
+                                    <h5>Instituto Socioambiental (ISA)</h5>
+                                    <p>Focuses on indigenous rights (land rights included) and 
+                                       protecting the ecological structure of Brazil.</p>
                                 </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
+                                <a href="https://www.socioambiental.org/en/" class="btn-resource">Visit Site</a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4">
                             <div class="resource-card">
                                 <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to education access in Brazil.]</p>
+                                    <h5>FICA (Fundo Imobiliário Comunitário para Aluguel)</h5>
+                                    <p>FICA offers alternative housing options to Favelas. 
+                                       They offer residents real addresses and contractual agreements
+                                       that allow residents to retain more rights compared to traditionally 
+                                       exploitive contracts.</p>
                                 </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
+                                <a href="https://www.wealth-inequality.net/projectfica" class="btn-resource">Visit Site</a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4">
                             <div class="resource-card">
                                 <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to education access in Brazil.]</p>
+                                    <h5>Students For Liberty: The Favelas Project</h5>
+                                    <p>Not a charity, but an example of how an organization in the past
+                                        successfully helped Brazillians by providing the resources and education
+                                        needed to obtain land titles for hundred of Brazillian families
+                                    </p>
                                 </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
+                                <a href="https://studentsforliberty.org/success-story/the-favelas-project-granting-property-rights-to-thousands-of-brazilians/" class="btn-resource">Visit Site</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Section 3: Health Infrastructure -->
-                    <h3 class="resource-section-title">3. Health Infrastructure</h3>
+                    <!-- Section 3: fin & tech -->
+                    <h3 class="resource-section-title">3. Finance & Technology</h3>
+                    <div class="row g-3 mb-5">
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>EduMais</h5>
+                                    <p>Provides education for programming, digital literacy, English, and videogame creation.
+                                        By providing technological centered education, EduMais is preparing young Brazillians to
+                                        better navigate the online world with relevant skills.
+                                    </p>
+                                </div>
+                                <a href="https://edumais.org/mission/" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="resource-card">
+                                <div>
+                                    <h5>Sitawi</h5>
+                                    <p>Sitawi acts as a middleman between investors and organizations that are trying to help Brazil.
+                                        They follow an "impact investment model" where they fund organizations
+                                        making the most difference. They also provide consultancy and management
+                                        services for NGOs. They donate to tech, education, and equity.
+                                    </p>
+                                </div>
+                                <a href="https://sitawi.net/en/" class="btn-resource">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 4: Microfinance-->
+                    <h3 class="resource-section-title">4. Microfinance</h3>
                     <div class="row g-3 mb-2">
-                        <div class="col-sm-6 col-lg-4">
+                        <div class="col-lg-12">
                             <div class="resource-card">
                                 <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to health infrastructure in Brazil.]</p>
+                                    <h5>Sebrae</h5>
+                                    <p>Offers guidance, training, networking, and funding to
+                                        Brazillian entrepreneurs. Helping small businesses get off the
+                                        ground diversifies Brazils economy and creates more efficient markets.
+                                    </p>
                                 </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="resource-card">
-                                <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to health infrastructure in Brazil.]</p>
-                                </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="resource-card">
-                                <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to health infrastructure in Brazil.]</p>
-                                </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
+                                <a href="https://sebrae.com.br/sobre-nos" class="btn-resource">Visit Site</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Section 4: Urban Poverty -->
-                    <h3 class="resource-section-title">4. Urban Poverty</h3>
-                    <div class="row g-3 mb-2">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="resource-card">
-                                <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to urban poverty in Brazil.]</p>
-                                </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="resource-card">
-                                <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to urban poverty in Brazil.]</p>
-                                </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="resource-card">
-                                <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to urban poverty in Brazil.]</p>
-                                </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Section 5: Environmental Impact -->
-                    <h3 class="resource-section-title">5. Environmental Impact</h3>
-                    <div class="row g-3 mb-2">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="resource-card">
-                                <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to environmental impact in Brazil.]</p>
-                                </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="resource-card">
-                                <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to environmental impact in Brazil.]</p>
-                                </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="resource-card">
-                                <div>
-                                    <h5>[Organization Name]</h5>
-                                    <p>[Brief description of what this org does and how it relates to environmental impact in Brazil.]</p>
-                                </div>
-                                <a href="#" class="btn-resource">Visit Site</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -272,6 +229,7 @@
             <p class="float-start"> Education In Brazil</p>
             <div class="footer-nav-box">
                 <ul class="d-flex align-items-center mb-0">
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="page1.html">Resource Rights</a></li>
                     <li><a href="page2.html">Property & Natural Resources</a></li>
                     <li><a href="page3.html">Finance & Technology</a></li>

@@ -305,3 +305,11 @@ footer {
     border-left: 4px solid var(--yellow);
     padding: 20px;
 }
+
+/* Mobile navbar fix */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem !important;
+        white-space: normal;
+    }
+}
