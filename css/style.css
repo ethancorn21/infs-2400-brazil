@@ -34,16 +34,25 @@ body {
     color: var(--yellow) !important;
 }
 
+/* ---- Hero Mission Wrapper ---- */
+.hero-mission-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 25px;
+}
+
 /* ---- Hero Section ---- */
 .hero-section {
-    background-color: var(--dark-green);
-    background-image: url('../images/image.png');
-    background-size: cover;
+    background-color: var(--off-white);
+    background-image: url('../images/index/Flag_map_of_brazil.png');
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     border-radius: 20px;
-    margin-top: 25px;
     padding: 40px;
-    min-height: 350px;
+    min-height: 400px;
+    flex: 1;
     position: relative;
     overflow: hidden;
 }
@@ -70,6 +79,28 @@ body {
 .hero-section .mission-box p {
     margin-bottom: 0;
     font-size: 0.95rem;
+}
+
+/* ---- Mission Statement ---- */
+.mission-statement {
+    background-color: var(--peach);
+    color: var(--dark-green);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid var(--dark-green);
+    flex: 1;
+}
+
+.mission-statement h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.mission-statement p {
+    margin-bottom: 0;
+    line-height: 1.6;
 }
 
 /* ---- UN Goal Box ---- */
