@@ -1,0 +1,72 @@
+/* Page Design Styles */
+.header-banner {
+    background-color: var(--off-white);
+    color: var(--dark-green);
+    padding: 60px 0;
+    margin-bottom: 40px;
+    border-bottom: 5px solid var(--rust);
+}
+
+.content-main {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    min-height: 600px;
+}
+
+.sidebar-card {
+    background: var(--dark-green);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    position: sticky;
+    top: 20px;
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: 20px; /* distance from top of screen */
+}
+
+.sidebar-card a {
+    display: block;
+    color: var(--yellow);
+    padding: 8px 0;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.sidebar-card a:hover {
+    color: var(--peach);
+}
+
+.highlight-you {
+    color: var(--dark-green);
+    font-weight: 900;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+}
+.goal-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            height: 100%;
+        }
+
+.goal-card .card-body {
+    padding: 20px;
+}
+
+.links-list li {
+    margin-bottom: 10px;
+}
+.stat-box {
+    background: linear-gradient(145deg, #ffffff, #f6f6f2);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-left: 6px solid var(--rust);
+    padding: 18px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}

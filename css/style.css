@@ -266,9 +266,6 @@ footer {
     border-bottom: 4px solid var(--peach);
 }
 
-.header-banner h1 {
-    color: var(--off-white);
-}
 
 .header-banner .lead {
     color: var(--peach);
