@@ -310,3 +310,24 @@ footer {
         white-space: normal;
     }
 }
+
+@media (max-width: 768px) {
+    footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .float-start {
+        float: none;
+    }
+
+    .footer-nav-box {
+        float: none;
+        margin-top: 15px;
+    }
+
+    .footer-nav-box ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
